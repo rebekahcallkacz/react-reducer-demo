@@ -1,7 +1,7 @@
 import { useEffect, useReducer } from "react";
 import List from "../src/List";
 
-const initialStories = [
+const INITIAL_STORIES = [
   {
     title: "React",
     url: "https://reactjs.org/",
@@ -22,7 +22,7 @@ const initialStories = [
 
 const getAsyncStories = () =>
   new Promise((resolve) =>
-    setTimeout(() => resolve({ data: { stories: initialStories } }), 2000)
+    setTimeout(() => resolve({ data: { stories: INITIAL_STORIES } }), 2000)
   );
 
 // State is the current state
