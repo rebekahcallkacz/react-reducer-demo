@@ -84,7 +84,7 @@ const App = () => {
       .catch(() => dispatchStories({ type: "STORIES_FETCH_FAILURE" }));
   }, []);
 
-  // When removing a store, pass the action payload as the item you want removed
+  // When removing a story, pass the action payload as the item you want removed
   const handleRemoveStory = (item) => {
     dispatchStories({
       type: "REMOVE_STORY",
